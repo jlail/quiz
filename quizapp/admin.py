@@ -2,9 +2,9 @@ from django.contrib import admin
 from quizapp.models import Question, Answer
 
 
-class AnswerInline(admin.StackedInline):
+class AnswerInline(admin.TabularInline):
     model = Answer
-    extra = 1
+    extra = 0
 
 
 class QuestionAdmin(admin.ModelAdmin):
